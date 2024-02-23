@@ -1,28 +1,43 @@
 import React from 'react';
 import './App.css';
 
+
+
 function App() {
     return (
         <div className="App">
-            <div>
-                <h3>What to learn</h3>
-                <div>
-                    <input/>
-                    <button>+</button>
-                </div>
-                <ul>
-                    <li><input type="checkbox" checked={true}/> <span>HTML&CSS</span></li>
-                    <li><input type="checkbox" checked={true}/> <span>JS</span></li>
-                    <li><input type="checkbox" checked={false}/> <span>React</span></li>
-                </ul>
-                <div>
-                    <button>All</button>
-                    <button>Active</button>
-                    <button>Completed</button>
-                </div>
-            </div>
+      App component
+            <Raiting />
+            <Raiting />
+            <Raiting />
+            <Raiting />
+
+            <Raiting />
+            <Accordion />
+
         </div>
     );
+}
+
+
+function Accordion() {
+    return (
+        <div>
+            <h3>Menu</h3>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    )
+}
+function Raiting() {
+    return (
+        <div>
+            <div>Star</div>
+        </div>
+    )
 }
 
 export default App;
