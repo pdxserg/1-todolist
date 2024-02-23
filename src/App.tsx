@@ -6,13 +6,10 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-      App component
-            <Raiting />
-            <Raiting />
-            <Raiting />
-            <Raiting />
+            App component
+            <Rating />
+            <Rating />
 
-            <Raiting />
             <Accordion />
 
         </div>
@@ -23,21 +20,40 @@ function App() {
 function Accordion() {
     return (
         <div>
-            <h3>Menu</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+            <AccordionTitle />
+            <AccordionMenu />
+
         </div>
     )
 }
-function Raiting() {
+function Rating() {
+    console.log('Hello')
     return (
         <div>
             <div>Star</div>
         </div>
     )
 }
+function AccordionMenu() {
+    console.log('HI')
+    return (
+        <div>
+            <h3> Menu</h3>
 
+        </div>
+    )
+}
+function AccordionTitle() {
+    return (
+
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    )
+}
 export default App;
